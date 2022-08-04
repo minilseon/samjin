@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+
+
+/* Header.jsx */
+
+.header .header__container {
+  width: 1210px;
+  margin: 0 auto;
+}
+.header .header__container .gnb {overflow: hidden;}
+.header .header__container .gnb ul {
+  float: right;
+}
+.header .header__container .gnb li {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+}
+.header .header__container .logo h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.header .header__container .lnb {
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+.header .header__container .lnb ul {
+  width: 800px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__container .lnb li {
+  line-height: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Contents.jsx */
+.wrap {
+  width: 1210px;
+  margin: 0 auto;
 }
+.best-container .best-container__title {
+  margin: 20px 0;
+  text-align: center;
+}
+.best-container .best-container__thumb {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.best-container .best-container__thumb .best {
+  width: 280px;
+  margin: 10px 0;
+}
+.best-container .best-container__thumb .best .best__desc {
+  font-size: 14px;
+  color: #666;
+}
+.best-container .best-container__thumb .best .best__subtitle {
+  height: 40px;
+  font: 18px;
+  line-height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.best-container .best-container__thumb .best .best__price {
+  font-size: 19px;
+  font-weight: bold;
+  color: orange;
+}
+/* .best-container .best-container__thumb .best .best__btn {} */
+/* .best-container .best-container__thumb .best .best__btn button {
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+} */
+/* .best-container .best-container__thumb .best .best__btn button:first-child { border-right: none; } */
+
+
+  
